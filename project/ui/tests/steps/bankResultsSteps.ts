@@ -29,12 +29,14 @@ When("user compared the results by clicking Jetzt vergleichen", async () => {
 });
 
 Then("user sees atleast {int} bank products", async (products: string) => {
+    await comparisonResultsPage.waitForComparisonPageToLoad();
     await commonPageElements.scrollToBottom();
     let listOfProducts = await comparisonResultsPage.countOfListOfProducts();
     expect(listOfProducts).toBeGreaterThanOrEqual(parseInt(products));
 });
 
 Then("user sees atleast {int} bank product with Sofortauszahlung feature", async (listOfSofortMethods: string) => {
+    await comparisonResultsPage.waitForComparisonPageToLoad();
     await commonPageElements.scrollToBottom();
     let listOfProductsWithSofort = await comparisonResultsPage.countOfListOfProductsWithSofort();
     console.log("List of products with sofort: "+listOfProductsWithSofort);

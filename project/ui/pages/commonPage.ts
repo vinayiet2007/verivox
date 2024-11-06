@@ -20,6 +20,8 @@ export class CommonPageElements{
     public async openKreditModule(): Promise<any> {
         const kreditModuleElement = await this.elementManager.getCommonElement("kreditModule");
         await this.baseActions.click(kreditModuleElement);
+        const kreditElement = await this.elementManager.getKreditElement("kreditbetrag");
+        await this.baseActions.waitForElement(kreditElement);
     }
 
     public async fetchCurrentUrl(): Promise<string> {

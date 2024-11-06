@@ -36,4 +36,8 @@ export class ComparisonResultsPage{
         await this.baseActions.click(firstSevenMinAngebotButtonElement);
     }
 
+    public async waitForComparisonPageToLoad():Promise<void>{
+        const allBankCompareButtonElement = await this.elementManager.getComparisonResultsElelements("allBankCompareButton");
+        await this.baseActions.waitForElement(allBankCompareButtonElement);
+    }
 }
