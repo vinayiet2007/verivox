@@ -8,7 +8,7 @@
     "apiTests":"npx playwright test",
     "uiTests": "npx cucumber-js --tags @Regression --format @cucumber/pretty-formatter --format cucumber-console-formatter"
   },
-  "author": "",
+  "author": "vinay.iet2007@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "@cucumber/cucumber": "^10.4.0",

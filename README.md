@@ -1,5 +1,13 @@
+# AUTHOR
+vinay srivastava
+# Version
+1.0.0
 # Project Description
-    - This is automation project for practice
+This is an automation project for learning.
+There are UI & API Tests.
+UI Tests are created with Cucumber and playwright 
+API Tests are created with Playwright.
+
 # Project Requirement
     - NodeJs - v18.17.0
     - Playwright
