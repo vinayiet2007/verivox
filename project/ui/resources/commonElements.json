@@ -1,0 +1,15 @@
+{
+    "name":"landingPage",
+    "elements":[
+        {
+            "locatorName":"kreditModule",
+            "locatorType":"xpath",
+            "locatorValue":"//span[text()='Kredit']"
+        },
+        {
+            "locatorName":"cookieAccept",
+            "locatorType":"xpath",
+            "locatorValue":"//button[text()='Nur notwendige Cookies']"
+        }
+    ]
+}

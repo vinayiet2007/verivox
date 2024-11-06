@@ -1,0 +1,15 @@
+{
+    "name":"signUpFunnelModule",
+    "elements":[
+        {
+            "locatorName":"nettobetrag",
+            "locatorType":"xpath",
+            "locatorValue":"//ul[contains(@class,'shopping-cart-data')]//li[@class='data']//strong"
+        },
+        {
+            "locatorName":"laufzeit",
+            "locatorType":"xpath",
+            "locatorValue":"//ul[contains(@class,'shopping-cart-data')]//li[@class='runtime']//strong"
+        }
+    ]
+}

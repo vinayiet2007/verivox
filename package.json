@@ -1,0 +1,20 @@
+{
+  "name": "verivox",
+  "version": "1.0.0",
+  "description": "Test Automation Project",
+  "main": "index.js",
+  "scripts": {
+    "compile":"tsc --project tsconfig.json --noEmit",
+    "apiTests":"npx playwright test",
+    "uiTests": "npx cucumber-js --tags @Regression --format @cucumber/pretty-formatter --format cucumber-console-formatter"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.4.0",
+    "@playwright/test": "^1.48.2",
+    "@types/node": "22.9.0",
+    "cucumber-console-formatter": "1.0.0",
+    "ts-node": "10.9.2"
+  }
+}

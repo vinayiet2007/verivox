@@ -1,0 +1,25 @@
+{
+    "name":"kreditModule",
+    "elements":[
+        {
+            "locatorName":"kreditbetrag",
+            "locatorType":"xpath",
+            "locatorValue":"//input[@name='kreditbetrag']"
+        },
+        {
+            "locatorName":"laufZeit",
+            "locatorType":"xpath",
+            "locatorValue":"//select[@name='kreditlaufzeit']"
+        },
+        {
+            "locatorName":"compareResults",
+            "locatorType":"xpath",
+            "locatorValue":"//a[text()='Mehr Informationen über Kredite']//ancestor::div[@class='calculator']//button[text()='Jetzt vergleichen']"
+        },
+        {
+            "locatorName":"errorMessagePopup",
+            "locatorType":"xpath",
+            "locatorValue":"//input[@name='kreditbetrag']"
+        }
+    ]
+}

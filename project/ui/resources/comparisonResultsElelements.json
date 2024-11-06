@@ -1,0 +1,30 @@
+{
+    "name":"compareResultsModule",
+    "elements":[
+        {
+            "locatorName":"listOfProducts",
+            "locatorType":"xpath",
+            "locatorValue":"//vx-srl-base-product-card[contains(@class,'product-card')]"
+        },
+        {
+            "locatorName":"productsWithSofort",
+            "locatorType":"xpath",
+            "locatorValue":"//vx-srl-base-product-card[contains(@class,'product-card')]//span[text()='Sofortauszahlung']"
+        },
+        {
+            "locatorName":"barInfo",
+            "locatorType":"xpath",
+            "locatorValue":"//div[@class='bar_info']"
+        },
+        {
+            "locatorName":"allBankCompareButton",
+            "locatorType":"xpath",
+            "locatorValue":"//span[text()='Alle Banken vergleichen']//ancestor::button"
+        },
+        {
+            "locatorName":"firstSevenMinAngebotButton",
+            "locatorType":"xpath",
+            "locatorValue":"(//vx-srl-base-product-card[contains(@class,'product-card')]//span[text()='In 7 min zum angebot']//ancestor::button)[1]"
+        }
+    ]
+}
