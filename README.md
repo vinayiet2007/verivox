@@ -18,6 +18,8 @@ API Tests are created with Playwright.
     - After cloning project, install NodeJs and run below commands
         - npm install
         - npx playwright install
+        - tsc --init
+        - npm init playwright@latest
 # Project Structure
     - All tests are stored under project directory
     - Project
