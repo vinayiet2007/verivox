@@ -30,6 +30,7 @@ export class BrowserActions implements IBasicActions {
  */
     public async click(webElement: Locator): Promise<void> {
         console.log(`Clicking on element: ${webElement}`);
+        console.log("Check")
         await webElement.click();
     }
 
