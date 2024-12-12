@@ -18,7 +18,7 @@ jobs:
       - name: Run tests with cucumber
         run: npx cucumber-js --tags @Regression --format @cucumber/pretty-formatter --format cucumber-console-formatter
       - uses: actions/upload-artifact@v2
-      if: ${{ always() }}
-      with:
-        - name: Publish Test Summary Results
-          run: npx github-actions-ctrf ctrf/ctrf-report.json
+        if: ${{ always() }}
+        with:
+          - name: Publish Test Summary Results
+            run: npx github-actions-ctrf ctrf/ctrf-report.json
