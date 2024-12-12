@@ -15,6 +15,7 @@
     "@playwright/test": "^1.48.2",
     "@types/node": "22.9.0",
     "cucumber-console-formatter": "1.0.0",
-    "ts-node": "10.9.2"
+    "ts-node": "10.9.2",
+    "cucumber-junit": "latest"
   }
 }

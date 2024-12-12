@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<testsuite failures="1" skipped="0" name="cucumber-js" time="29.477827737" tests="2">
+  <testcase classname="Banking Result List" name="Verify that results have atleast 10 bank products" time="14.653112577">
+    <failure type="Error" message="[2mexpect([22m[31mreceived[39m[2m).[22mtoBeGreaterThanOrEqual[2m([22m[32mexpected[39m[2m)[22m&#xA;&#xA;Expected: >= [32m10[39m&#xA;Received:    [31m0[39m"><![CDATA[Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeGreaterThanOrEqual[2m([22m[32mexpected[39m[2m)[22m
+
+Expected: >= [32m10[39m
+Received:    [31m0[39m
+    at Proxy.<anonymous> (/Users/vinaysrivastava/Repo/verivox/node_modules/playwright/lib/matchers/expect.js:225:37)
+    at /Users/vinaysrivastava/Repo/verivox/project/ui/tests/steps/bankResultsSteps.ts:35:28
+    at step (/Users/vinaysrivastava/Repo/verivox/project/ui/tests/steps/bankResultsSteps.ts:33:23)
+    at Object.next (/Users/vinaysrivastava/Repo/verivox/project/ui/tests/steps/bankResultsSteps.ts:14:53)
+    at fulfilled (/Users/vinaysrivastava/Repo/verivox/project/ui/tests/steps/bankResultsSteps.ts:5:58)]]></failure>
+    <system-out><![CDATA[Given user is on the start page...........................................passed
+When user chose the Kredit product........................................passed
+When user entered the loan amount "25000".................................passed
+When user entered the loan duration 8 years...............................passed
+When user compared the results by clicking Jetzt vergleichen..............passed
+Then user sees atleast 10 bank products...................................failed]]></system-out>
+  </testcase>
+  <testcase classname="SignUp Funnel" name="Verify that user navigated to signup page after seeing all banking comparisons" time="14.82471516">
+    <system-out><![CDATA[Given user is on the start page...........................................passed
+When user chose the Kredit product........................................passed
+When user entered the loan amount "25000".................................passed
+When user entered the loan duration 8 years...............................passed
+When user compared the results by clicking Jetzt vergleichen..............passed
+When user sees all banking comparisons....................................passed
+Then user navigated to the Url starts with "https://www.verivox.de/rate...passed]]></system-out>
+  </testcase>
+</testsuite>

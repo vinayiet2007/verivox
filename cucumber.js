@@ -6,7 +6,8 @@ let verivox =[
     '--format html:reports/report.html',
     '--require-module ts-node/register',
     '--format summary',
-    '--format progress'
+    '--format progress',
+    '--format junit:test/results/cucumber-report.xml'
 ].join(' ');
 
 module.exports = {

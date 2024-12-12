@@ -6,7 +6,7 @@
         "description": "",
         "id": "banking-result-list;verify-that-results-have-atleast-10-bank-products",
         "keyword": "Scenario",
-        "line": 8,
+        "line": 7,
         "name": "Verify that results have atleast 10 bank products",
         "steps": [
           {
@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2451799
+              "duration": 405374
             }
           },
           {
@@ -22,7 +22,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 488600
+              "duration": 76499
             }
           },
           {
@@ -30,7 +30,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2088376800
+              "duration": 645793333
             }
           },
           {
@@ -38,85 +38,86 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 605399
+              "duration": 72666
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 4,
             "name": "user is on the start page",
             "match": {
-              "location": "project\\ui\\tests\\steps\\commonSteps.ts:13"
+              "location": "project/ui/tests/steps/commonSteps.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 11041974299
+              "duration": 5790680459
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 5,
             "name": "user chose the Kredit product",
             "match": {
-              "location": "project\\ui\\tests\\steps\\commonSteps.ts:27"
+              "location": "project/ui/tests/steps/commonSteps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 3127163400
+              "duration": 1376062040
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user entered the loan amount \"25000\"",
+            "match": {
+              "location": "project/ui/tests/steps/bankResultsSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15294332
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 9,
-            "name": "user entered the loan amount \"25000\"",
+            "name": "user entered the loan duration 8 years",
             "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:17"
+              "location": "project/ui/tests/steps/bankResultsSteps.ts:22"
             },
             "result": {
               "status": "passed",
-              "duration": 171919600
+              "duration": 8160750
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 10,
-            "name": "user entered the loan duration 8 years",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 158943599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
             "name": "user compared the results by clicking Jetzt vergleichen",
             "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:27"
+              "location": "project/ui/tests/steps/bankResultsSteps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 5988040199
+              "duration": 6081030000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 12,
+            "line": 11,
             "name": "user sees atleast 10 bank products",
             "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:31"
+              "location": "project/ui/tests/steps/bankResultsSteps.ts:31"
             },
             "result": {
-              "status": "passed",
-              "duration": 6764129899
+              "status": "failed",
+              "duration": 709884874,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m10\u001b[39m\nReceived:    \u001b[31m0\u001b[39m\n    at Proxy.<anonymous> (/Users/vinaysrivastava/Repo/verivox/node_modules/playwright/lib/matchers/expect.js:225:37)\n    at /Users/vinaysrivastava/Repo/verivox/project/ui/tests/steps/bankResultsSteps.ts:35:28\n    at step (/Users/vinaysrivastava/Repo/verivox/project/ui/tests/steps/bankResultsSteps.ts:33:23)\n    at Object.next (/Users/vinaysrivastava/Repo/verivox/project/ui/tests/steps/bankResultsSteps.ts:14:53)\n    at fulfilled (/Users/vinaysrivastava/Repo/verivox/project/ui/tests/steps/bankResultsSteps.ts:5:58)"
             }
           },
           {
@@ -124,298 +125,25 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 537187299
+              "duration": 25652250
             }
           }
         ],
         "tags": [
           {
             "name": "@Regression",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "banking-result-list;verify-that-at-least-1-product-have-sofortauszahlung-feature",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Verify that at least 1 product have Sofortauszahlung feature",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 305599
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 126799
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 3083981500
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 123499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "user is on the start page",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\commonSteps.ts:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10506255799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "user chose the Kredit product",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\commonSteps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3368261299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 15,
-            "name": "user entered the loan amount \"25000\"",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 189127899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 16,
-            "name": "user entered the loan duration 8 years",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 63061199
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 17,
-            "name": "user compared the results by clicking Jetzt vergleichen",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6621246400
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 18,
-            "name": "user sees atleast 1 bank product with Sofortauszahlung feature",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:38"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 7422220399
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 342835999
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "banking-result-list;verify-that-mobile-and-desktop-results-are-same",
-        "keyword": "Scenario",
-        "line": 20,
-        "name": "Verify that mobile and desktop results are same",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 207199
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 76400
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 2082022100
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 101700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "user is on the start page",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\commonSteps.ts:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9289709000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "user chose the Kredit product",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\commonSteps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3589730800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 21,
-            "name": "user entered the loan amount \"25000\"",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 62923999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 22,
-            "name": "user entered the loan duration 8 years",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 59229699
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 23,
-            "name": "user compared the results by clicking Jetzt vergleichen",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6083670800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 24,
-            "name": "user sees same results on mobile and desktop",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:46"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3391491199
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 743595600
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression",
-            "line": 1
+            "line": 6
           }
         ],
         "type": "scenario"
       }
     ],
     "id": "banking-result-list",
-    "line": 2,
+    "line": 1,
     "keyword": "Feature",
     "name": "Banking Result List",
-    "tags": [
-      {
-        "name": "@Regression",
-        "line": 1
-      }
-    ],
-    "uri": "project\\ui\\tests\\features\\bankResults.feature"
+    "tags": [],
+    "uri": "project/ui/tests/features/bankResults.feature"
   },
   {
     "description": "",
@@ -424,7 +152,7 @@
         "description": "",
         "id": "signup-funnel;verify-that-user-navigated-to-signup-page-after-seeing-all-banking-comparisons",
         "keyword": "Scenario Outline",
-        "line": 18,
+        "line": 17,
         "name": "Verify that user navigated to signup page after seeing all banking comparisons",
         "steps": [
           {
@@ -432,7 +160,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 162400
+              "duration": 26041
             }
           },
           {
@@ -440,7 +168,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 57400
+              "duration": 7540
             }
           },
           {
@@ -448,7 +176,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1966639200
+              "duration": 522500249
             }
           },
           {
@@ -456,98 +184,98 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 83700
+              "duration": 28957
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 4,
             "name": "user is on the start page",
             "match": {
-              "location": "project\\ui\\tests\\steps\\commonSteps.ts:13"
+              "location": "project/ui/tests/steps/commonSteps.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 9649729700
+              "duration": 5740030208
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 5,
             "name": "user chose the Kredit product",
             "match": {
-              "location": "project\\ui\\tests\\steps\\commonSteps.ts:27"
+              "location": "project/ui/tests/steps/commonSteps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 3156678599
+              "duration": 1395650750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "user entered the loan amount \"25000\"",
+            "match": {
+              "location": "project/ui/tests/steps/bankResultsSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13784625
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 10,
-            "name": "user entered the loan amount \"25000\"",
+            "name": "user entered the loan duration 8 years",
             "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:17"
+              "location": "project/ui/tests/steps/bankResultsSteps.ts:22"
             },
             "result": {
               "status": "passed",
-              "duration": 236699100
+              "duration": 6510041
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 11,
-            "name": "user entered the loan duration 8 years",
+            "name": "user compared the results by clicking Jetzt vergleichen",
             "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:22"
+              "location": "project/ui/tests/steps/bankResultsSteps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 81622200
+              "duration": 6069598417
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 12,
-            "name": "user compared the results by clicking Jetzt vergleichen",
+            "name": "user sees all banking comparisons",
             "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:27"
+              "location": "project/ui/tests/steps/signUpFunnelSteps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 6116267299
+              "duration": 78947916
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Then ",
             "line": 13,
-            "name": "user sees all banking comparisons",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\signUpFunnelSteps.ts:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5158401100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 14,
             "name": "user navigated to the Url starts with \"https://www.verivox.de/ratenkredit/vergleich/\" and end with \"/signup10\"",
             "match": {
-              "location": "project\\ui\\tests\\steps\\signUpFunnelSteps.ts:26"
+              "location": "project/ui/tests/steps/signUpFunnelSteps.ts:26"
             },
             "result": {
               "status": "passed",
-              "duration": 4691369100
+              "duration": 975478875
             }
           },
           {
@@ -555,340 +283,24 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 444306600
+              "duration": 22151541
             }
           }
         ],
         "tags": [
           {
             "name": "@Regression",
-            "line": 1
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "signup-funnel;verify-that-user-navigated-to-signup-page-after-in-seven-minute-angebot",
-        "keyword": "Scenario Outline",
-        "line": 29,
-        "name": "Verify that user navigated to signup page after in seven minute angebot",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 146000
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 58000
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 2125647899
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 121499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "user is on the start page",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\commonSteps.ts:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9496054999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "user chose the Kredit product",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\commonSteps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3891329099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 21,
-            "name": "user entered the loan amount \"25000\"",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 42425300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 22,
-            "name": "user entered the loan duration 8 years",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 52365099
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 23,
-            "name": "user compared the results by clicking Jetzt vergleichen",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5944674399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "user selected first seven minute angebot",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\signUpFunnelSteps.ts:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4900892800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "user navigated to the Url starts with \"https://www.verivox.de/ratenkredit/vergleich/\" and end with \"/signup10\"",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\signUpFunnelSteps.ts:26"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4036405499
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 793568399
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression",
-            "line": 1
-          },
-          {
-            "name": "@debug",
-            "line": 19
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "signup-funnel;verify-that-user-can-see-nettokreditbetrag-and-laufzeit-on-signup-page",
-        "keyword": "Scenario Outline",
-        "line": 41,
-        "name": "Verify that user can see Nettokreditbetrag and Laufzeit on signup page",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 96400
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 46699
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 2308435200
-            }
-          },
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 82300
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "user is on the start page",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\commonSteps.ts:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 11549430700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "user chose the Kredit product",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\commonSteps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3368025200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 32,
-            "name": "user entered the loan amount \"25000\"",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:17"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 176079100
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 33,
-            "name": "user entered the loan duration 8 years",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:22"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 44277799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 34,
-            "name": "user compared the results by clicking Jetzt vergleichen",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\bankResultsSteps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 6452109200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 35,
-            "name": "user sees all banking comparisons",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\signUpFunnelSteps.ts:18"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 5153779499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 36,
-            "name": "user sees Nettokreditbetrag as \"25000\"",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\signUpFunnelSteps.ts:33"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 4923108399
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 37,
-            "name": "user sees Laufzeit as 8",
-            "match": {
-              "location": "project\\ui\\tests\\steps\\signUpFunnelSteps.ts:39"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 275118199
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 400290600
-            }
-          }
-        ],
-        "tags": [
-          {
-            "name": "@Regression",
-            "line": 1
+            "line": 7
           }
         ],
         "type": "scenario"
       }
     ],
     "id": "signup-funnel",
-    "line": 2,
+    "line": 1,
     "keyword": "Feature",
     "name": "SignUp Funnel",
-    "tags": [
-      {
-        "name": "@Regression",
-        "line": 1
-      }
-    ],
-    "uri": "project\\ui\\tests\\features\\signUpFunnel.feature"
+    "tags": [],
+    "uri": "project/ui/tests/features/signUpFunnel.feature"
   }
 ]
