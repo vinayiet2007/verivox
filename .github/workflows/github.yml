@@ -8,8 +8,8 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
       - uses: microsoft/playwright-github-action@v1
       - name: Install dependencies
         run: npm install
@@ -17,3 +17,8 @@ jobs:
         run: npx playwright install
       - name: Run tests with cucumber
         run: npx cucumber-js --tags @Regression --format @cucumber/pretty-formatter --format cucumber-console-formatter
+      - uses: actions/upload-artifact@v2
+      if: ${{ always() }}
+      with:
+        - name: Publish Test Summary Results
+          run: npx github-actions-ctrf ctrf/ctrf-report.json
