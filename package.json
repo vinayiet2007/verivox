@@ -16,6 +16,7 @@
     "@types/node": "22.9.0",
     "cucumber-console-formatter": "1.0.0",
     "ts-node": "10.9.2",
-    "cucumber-junit": "latest"
+    "cucumber-junit": "latest",
+    "junit-report-builder":"5.1.1"
   }
 }
