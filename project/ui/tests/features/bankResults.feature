@@ -1,10 +1,9 @@
-@Regression
 Feature: Banking Result List
 
     Background: User lands on start page and is ready to perform kredit comparison
         Given user is on the start page
         When user chose the Kredit product
-
+    @Regression
     Scenario: Verify that results have atleast 10 bank products
         When user entered the loan amount "25000"
         When user entered the loan duration 8 years

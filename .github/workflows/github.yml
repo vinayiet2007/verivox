@@ -16,7 +16,16 @@ jobs:
       - name: Install playwright browsers
         run: npx playwright install
       - name: Run tests with cucumber
-        run: npx cucumber-js --tags @Regression --format @cucumber/pretty-formatter --format cucumber-console-formatter
-      - name: Publish Test Summary Results
-        run: npx github-actions-ctrf ctrf/ctrf-report.json
+        run: npx cucumber-js --tags @Regression
+      - name: Create test summary
+        uses: ./bin
+        with:
+          paths: test/results/*.xml
+          output: test/results/results.html
+      - name: Upload test summary
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-summary
+          path: test/results/results.html
+        if: always()
           

@@ -1,11 +1,10 @@
-@Regression
 Feature: SignUp Funnel
 
     Background: User lands on start page and is ready to perform kredit comparison
         Given user is on the start page
         When user chose the Kredit product
 
-
+    @Regression
     Scenario Outline: Verify that user navigated to signup page after seeing all banking comparisons
         When user entered the loan amount "<Nettokreditbetrag>"
         When user entered the loan duration <Laufzeit> years
